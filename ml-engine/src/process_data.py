@@ -3,17 +3,11 @@ import re
 import os
 
 def clean_currency(x):
-    """
-    Takes a messy string like '20,00,000' or '10M (undisclosed)' 
-    and returns a float like 2000000.0
-    """
     if pd.isna(x):
         return 0
     # Convert to string, lowercase, remove commas
     x = str(x).replace(',', '').lower()
     
-    # Extract the first valid number found using Regex
-    # This handles cases where there might be text attached
     match = re.search(r'\d+(\.\d+)?', x)
     if match:
         return float(match.group())

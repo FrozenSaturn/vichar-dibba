@@ -1,0 +1,39 @@
+# Node.js
+node_modules
+package-lock.json
+
+# Python
+__pycache__
+*.pyc
+.venv
+
+# IDE
+.idea
+.vscode
+
+# Data
+*.csv
+*.json
+
+# Logs
+*.log
+
+# Temporary
+*.tmp
+*.temp
+
+# System
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.example
+
+# Build
+build
+dist
+
+# Other
+.idea
+.vscode
