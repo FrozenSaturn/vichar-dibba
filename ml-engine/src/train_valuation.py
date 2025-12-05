@@ -12,7 +12,7 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_absolute_error, r2_score
 
 # --- CONFIGURATION ---
-DATA_PATH = '../data/cleaned_data.csv'  # Path to the file we created in step 1
+DATA_PATH = '../data/augmented_data.csv'  # Path to the file we created in step 1
 MODEL_PATH = '../models/valuation_model.pkl'
 
 def train():
